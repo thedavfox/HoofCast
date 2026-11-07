@@ -71,20 +71,23 @@ not required to sum to 1.
 
 ## Outcome variables
 
-All outcome variables describe only the final 100 video seconds. They are
-duration-weighted proportions from 0 to 1 and sum to 1 for each observation.
+All outcome variables describe only the final 100 video seconds. The six
+mutually exclusive activity proportions are duration-weighted values from 0 to
+1 and sum to 1 for each observation. `outcome_activity_not_stationary` is a
+derived complement rather than an additional mutually exclusive category.
 
 | Variable | Meaning |
 | --- | --- |
 | `outcome_activity_eating` | Proportion of outcome seconds labeled eating. |
 | `outcome_activity_drinking` | Proportion labeled drinking. |
-| `outcome_activity_walking` | Proportion labeled walking. This is the primary prediction target. |
+| `outcome_activity_walking` | Proportion labeled walking. |
 | `outcome_activity_stationary` | Proportion labeled stationary. |
+| `outcome_activity_not_stationary` | Complement of the stationary proportion: `1 - outcome_activity_stationary`. This is the primary prediction target. It includes walking, eating, drinking, other activity, and unknown activity. |
 | `outcome_activity_other` | Proportion labeled another activity. |
 | `outcome_activity_unknown` | Proportion with an unknown activity label. |
 
-For example, `outcome_activity_walking = 0.42` means that 42 of the final 100
-video seconds were labeled walking.
+For example, `outcome_activity_not_stationary = 0.42` means that the horse was
+not labeled stationary for 42 of the final 100 video seconds.
 
 ## Weather covariates
 
