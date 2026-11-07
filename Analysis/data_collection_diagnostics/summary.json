@@ -1,0 +1,71 @@
+{
+  "coverage": {
+    "n_observations": 2075,
+    "date_range_start": "2026-08-04 23:59:18",
+    "date_range_end": "2026-09-05 08:50:21",
+    "months_covered": {
+      "2026-08": 1451,
+      "2026-09": 624
+    },
+    "block_video_seconds_unique_values": [
+      200.0
+    ],
+    "pre_video_seconds_unique_values": [
+      100.0
+    ],
+    "outcome_video_seconds_unique_values": [
+      100.0
+    ]
+  },
+  "duplicate_observation_ids": 0,
+  "median_gap_between_consecutive_block_starts_seconds": 227.9675,
+  "visibility_mean_proportions": {
+    "pre_visibility_full": 0.949387508433735,
+    "pre_visibility_partial": 0.040895985542168674,
+    "pre_visibility_not_visible": 0.009716506024096386
+  },
+  "pct_observations_more_than_half_not_visible": 0.005783132530120482,
+  "pct_observations_with_any_not_visible_time": 0.03469879518072289,
+  "posture_mean_proportions": {
+    "pre_posture_standing": 0.9531082120481928,
+    "pre_posture_lying_sternal": 0.008548592771084338,
+    "pre_posture_lying_lateral": 0.023547334939759038,
+    "pre_posture_transitioning": 0.0,
+    "pre_posture_unknown": 0.014795860240963856
+  },
+  "pct_observations_with_any_unknown_posture_time": 0.05060240963855422,
+  "secondary_behavior_rates": {
+    "pre_pawing": {
+      "mean_proportion": 0.009939465060240965,
+      "pct_observations_with_any": 0.027951807228915663,
+      "is_constant_zero": false
+    },
+    "pre_biting_object": {
+      "mean_proportion": 0.0,
+      "pct_observations_with_any": 0.0,
+      "is_constant_zero": true
+    },
+    "pre_rubbing": {
+      "mean_proportion": 0.0,
+      "pct_observations_with_any": 0.0,
+      "is_constant_zero": true
+    },
+    "pre_repetitive_movement": {
+      "mean_proportion": 0.0,
+      "pct_observations_with_any": 0.0,
+      "is_constant_zero": true
+    },
+    "pre_no_secondary_behavior": {
+      "mean_proportion": 0.9900605349397591,
+      "pct_observations_with_any": 0.9975903614457832,
+      "is_constant_zero": false
+    }
+  },
+  "outcome_class_balance": {
+    "mean": 0.9058416000000001,
+    "median": 1.0,
+    "std": 0.22683742421997763,
+    "pct_exactly_0": 0.02457831325301205,
+    "pct_exactly_1": 0.7628915662650603
+  }
+}

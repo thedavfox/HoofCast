@@ -1,0 +1,110 @@
+{
+  "n_rows": 1660,
+  "numeric_covariates_checked": 26,
+  "constant_numeric_covariates_excluded": [
+    "pre_posture_transitioning",
+    "pre_biting_object",
+    "pre_rubbing",
+    "pre_repetitive_movement"
+  ],
+  "categorical_covariates_checked": [
+    "pre_posture_dominant",
+    "weather_is_day",
+    "recording_month"
+  ],
+  "strongest_numeric": [
+    {
+      "covariate": "pre_posture_standing",
+      "pearson_r": 0.4240310413585985,
+      "p_value": 2.0043072768441415e-73,
+      "abs_r": 0.4240310413585985
+    },
+    {
+      "covariate": "pre_posture_lying_lateral",
+      "pearson_r": -0.38664332066551854,
+      "p_value": 2.5482636217020575e-60,
+      "abs_r": 0.38664332066551854
+    },
+    {
+      "covariate": "pre_posture_lying_sternal",
+      "pearson_r": -0.207610720941367,
+      "p_value": 1.2786399432536267e-17,
+      "abs_r": 0.207610720941367
+    },
+    {
+      "covariate": "weather_shortwave_radiation_w_m2_prior_hour",
+      "pearson_r": 0.13800205248184066,
+      "p_value": 1.6477216735300075e-08,
+      "abs_r": 0.13800205248184066
+    },
+    {
+      "covariate": "weather_wind_gusts_10m_kmh",
+      "pearson_r": 0.10770484551423325,
+      "p_value": 1.0939331346422342e-05,
+      "abs_r": 0.10770484551423325
+    }
+  ],
+  "weakest_numeric": [
+    {
+      "covariate": "pre_transition_stand_to_lie",
+      "pearson_r": 0.011395457320686234,
+      "p_value": 0.6426824523151553,
+      "abs_r": 0.011395457320686234
+    },
+    {
+      "covariate": "pre_transition_lie_to_stand",
+      "pearson_r": 0.010260676646559233,
+      "p_value": 0.6761314914837486,
+      "abs_r": 0.010260676646559233
+    },
+    {
+      "covariate": "time_of_day_hour",
+      "pearson_r": 0.0071155118256721415,
+      "p_value": 0.7720508979251595,
+      "abs_r": 0.0071155118256721415
+    },
+    {
+      "covariate": "pre_visibility_partial",
+      "pearson_r": 0.005938274554714698,
+      "p_value": 0.8089633596998861,
+      "abs_r": 0.005938274554714698
+    },
+    {
+      "covariate": "weather_temperature_c",
+      "pearson_r": 0.0056203365788320275,
+      "p_value": 0.8190094146105978,
+      "abs_r": 0.0056203365788320275
+    }
+  ],
+  "categorical_associations": [
+    {
+      "covariate": "pre_posture_dominant",
+      "n_categories": 4,
+      "f_stat": 105.73333326217303,
+      "p_value": 1.2484980340966115e-62,
+      "eta_squared": 0.1607541049162967
+    },
+    {
+      "covariate": "weather_is_day",
+      "n_categories": 2,
+      "f_stat": 124.1073728599724,
+      "p_value": 7.561700037881328e-28,
+      "eta_squared": 0.06964079423609677
+    },
+    {
+      "covariate": "recording_month",
+      "n_categories": 2,
+      "f_stat": 1.5910721636217176,
+      "p_value": 0.20735045908761296,
+      "eta_squared": 0.0009587133784393461
+    }
+  ],
+  "top_numeric_for_pairwise_check": [
+    "pre_posture_standing",
+    "pre_posture_lying_lateral",
+    "pre_posture_lying_sternal",
+    "weather_shortwave_radiation_w_m2_prior_hour",
+    "weather_wind_gusts_10m_kmh",
+    "pre_posture_unknown"
+  ]
+}

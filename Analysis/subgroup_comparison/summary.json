@@ -1,0 +1,142 @@
+{
+  "pre_posture_dominant": {
+    "group_sizes": [
+      {
+        "pre_posture_dominant": "lying_lateral",
+        "n": 35
+      },
+      {
+        "pre_posture_dominant": "lying_sternal",
+        "n": 16
+      },
+      {
+        "pre_posture_dominant": "standing",
+        "n": 1595
+      },
+      {
+        "pre_posture_dominant": "unknown",
+        "n": 14
+      }
+    ],
+    "top_differing_covariates": [
+      {
+        "covariate": "pre_posture_lying_lateral",
+        "f_stat": 4926.338751601018,
+        "p_value": 0.0,
+        "eta_squared": 0.8992395277056071
+      },
+      {
+        "covariate": "pre_posture_standing",
+        "f_stat": 3924.1269696289755,
+        "p_value": 0.0,
+        "eta_squared": 0.8766791014318024
+      },
+      {
+        "covariate": "pre_posture_lying_sternal",
+        "f_stat": 3117.9145564476544,
+        "p_value": 0.0,
+        "eta_squared": 0.8495877788134792
+      },
+      {
+        "covariate": "pre_posture_unknown",
+        "f_stat": 986.8269520435109,
+        "p_value": 0.0,
+        "eta_squared": 0.6412852015186224
+      },
+      {
+        "covariate": "pre_visibility_not_visible",
+        "f_stat": 387.42717047454727,
+        "p_value": 1.301963005553394e-190,
+        "eta_squared": 0.4124078828578492
+      }
+    ]
+  },
+  "weather_is_day": {
+    "group_sizes": [
+      {
+        "weather_is_day": 0,
+        "n": 535
+      },
+      {
+        "weather_is_day": 1,
+        "n": 1125
+      }
+    ],
+    "top_differing_covariates": [
+      {
+        "covariate": "weather_shortwave_radiation_w_m2_prior_hour",
+        "f_stat": 795.1758017062524,
+        "p_value": 3.0667212854958582e-143,
+        "eta_squared": 0.32414138487473476
+      },
+      {
+        "covariate": "weather_relative_humidity_pct",
+        "f_stat": 243.1484365894551,
+        "p_value": 2.9388309607025683e-51,
+        "eta_squared": 0.12789555613324363
+      },
+      {
+        "covariate": "weather_temperature_c",
+        "f_stat": 190.55336013927413,
+        "p_value": 4.1218676629775193e-41,
+        "eta_squared": 0.10308242339562085
+      },
+      {
+        "covariate": "weather_wind_gusts_10m_kmh",
+        "f_stat": 174.8432373127693,
+        "p_value": 5.064712803205205e-38,
+        "eta_squared": 0.09539453988935612
+      },
+      {
+        "covariate": "pre_posture_standing",
+        "f_stat": 168.75192660623384,
+        "p_value": 8.127734806226373e-37,
+        "eta_squared": 0.09237812980974598
+      }
+    ]
+  },
+  "recording_month": {
+    "group_sizes": [
+      {
+        "recording_month": "2026-08",
+        "n": 1168
+      },
+      {
+        "recording_month": "2026-09",
+        "n": 492
+      }
+    ],
+    "top_differing_covariates": [
+      {
+        "covariate": "weather_temperature_c",
+        "f_stat": 447.19522992186506,
+        "p_value": 4.505123931322816e-88,
+        "eta_squared": 0.21242458825942864
+      },
+      {
+        "covariate": "weather_cloud_cover_pct",
+        "f_stat": 388.06615726278017,
+        "p_value": 8.612767020209511e-78,
+        "eta_squared": 0.18966452080998866
+      },
+      {
+        "covariate": "weather_wind_speed_10m_kmh",
+        "f_stat": 136.07945795114045,
+        "p_value": 2.8170882769942126e-30,
+        "eta_squared": 0.07584918123222072
+      },
+      {
+        "covariate": "weather_wind_gusts_10m_kmh",
+        "f_stat": 109.48104143559415,
+        "p_value": 7.424844760136382e-25,
+        "eta_squared": 0.06194184767417411
+      },
+      {
+        "covariate": "weather_relative_humidity_pct",
+        "f_stat": 93.83367284187726,
+        "p_value": 1.2680213965542562e-21,
+        "eta_squared": 0.0535631174902909
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "datasets_checked": [
+    "all_combined_data",
+    "exploration_data",
+    "holdout_data"
+  ],
+  "total_columns_checked_per_dataset": 42,
+  "columns_with_any_missing": [],
+  "any_missing_values_found": false
+}
