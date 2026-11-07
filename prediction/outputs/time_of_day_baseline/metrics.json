@@ -1,0 +1,69 @@
+{
+  "model": "ordinary_least_squares_linear_regression",
+  "feature": "time_of_day_hour",
+  "target": "outcome_activity_not_stationary",
+  "data": "Data/exploration_data.csv",
+  "cross_validation": {
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 226
+  },
+  "prediction_postprocessing": "Predictions were clipped to the valid proportion range [0, 1] before scoring.",
+  "mean_fold_mae": 0.1487030340795786,
+  "mean_fold_rmse": 0.22825662188892046,
+  "pooled_out_of_fold_mae": 0.14870303407957863,
+  "pooled_out_of_fold_rmse": 0.22902747983516963,
+  "out_of_range_predictions_before_clipping": 0,
+  "fold_metrics": [
+    {
+      "fold": 1,
+      "training_rows": 1328,
+      "validation_rows": 332,
+      "mae": 0.15220125334298873,
+      "rmse": 0.23353639333555387,
+      "intercept": 0.8845302044783601,
+      "time_of_day_hour_coefficient": 0.0017645755220081496,
+      "out_of_range_predictions_before_clipping": 0
+    },
+    {
+      "fold": 2,
+      "training_rows": 1328,
+      "validation_rows": 332,
+      "mae": 0.15845274176012997,
+      "rmse": 0.2456394377016686,
+      "intercept": 0.914370569983408,
+      "time_of_day_hour_coefficient": -0.0005876885995938061,
+      "out_of_range_predictions_before_clipping": 0
+    },
+    {
+      "fold": 3,
+      "training_rows": 1328,
+      "validation_rows": 332,
+      "mae": 0.13392729911064383,
+      "rmse": 0.19339129490424437,
+      "intercept": 0.8927472239731461,
+      "time_of_day_hour_coefficient": 0.0005815737175024174,
+      "out_of_range_predictions_before_clipping": 0
+    },
+    {
+      "fold": 4,
+      "training_rows": 1328,
+      "validation_rows": 332,
+      "mae": 0.1469207217232634,
+      "rmse": 0.22591931024085385,
+      "intercept": 0.9097079843201674,
+      "time_of_day_hour_coefficient": -0.0004687720006063283,
+      "out_of_range_predictions_before_clipping": 0
+    },
+    {
+      "fold": 5,
+      "training_rows": 1328,
+      "validation_rows": 332,
+      "mae": 0.15201315446086722,
+      "rmse": 0.24279667326228166,
+      "intercept": 0.9070030345346396,
+      "time_of_day_hour_coefficient": -1.4334914017039649e-05,
+      "out_of_range_predictions_before_clipping": 0
+    }
+  ]
+}
