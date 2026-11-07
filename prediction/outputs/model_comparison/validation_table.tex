@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering\small
+\begin{tabular}{llcc}
+\toprule
+Algorithm & Feature set & Selected tuning & Validation metric \\
+\midrule
+Baseline & --- & --- & MAE = 0.149; RMSE = 0.228 \\
+OLS & Set A & None & MAE = 0.136; RMSE = 0.219 \\
+Elastic Net & Set A & alpha=0.0001, l1\_ratio=1.0 & MAE = 0.136; RMSE = 0.219 \\
+RBF SVR & Set A & C=10.0, epsilon=0.01, gamma=0.01 & MAE = 0.099; RMSE = 0.239 \\
+Random Forest & Set A & max\_depth=20, max\_features=sqrt, min\_samples\_leaf=5 & MAE = 0.131; RMSE = 0.224 \\
+OLS & Set B & None & MAE = 0.122; RMSE = 0.205 \\
+Elastic Net & Set B & alpha=0.0001, l1\_ratio=0.05 & MAE = 0.122; RMSE = 0.205 \\
+RBF SVR & Set B & C=1.0, epsilon=0.01, gamma=0.01 & MAE = 0.092; RMSE = 0.217 \\
+Random Forest & Set B & max\_depth=20, max\_features=1.0, min\_samples\_leaf=5 & MAE = 0.120; RMSE = 0.209 \\
+\bottomrule
+\end{tabular}
+\caption{Validation performance by algorithm and feature set.}
+\end{table}

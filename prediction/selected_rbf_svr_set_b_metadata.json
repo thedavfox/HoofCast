@@ -1,0 +1,53 @@
+{
+  "model_name": "RBF-kernel support vector regression (Set B)",
+  "target": "outcome_activity_not_stationary",
+  "training_data": "Data/exploration_data.csv",
+  "training_observations": 1660,
+  "selection_procedure": {
+    "cv": "5-fold shuffled KFold",
+    "random_seed": 226,
+    "primary_metric": "mean validation MAE"
+  },
+  "selected_tuning": {
+    "C": 1.0,
+    "gamma": 0.01,
+    "epsilon": 0.01
+  },
+  "raw_required_columns": [
+    "time_of_day_hour",
+    "weather_wind_direction_10m_degrees",
+    "weather_temperature_c",
+    "weather_relative_humidity_pct",
+    "weather_precipitation_mm_prior_hour",
+    "weather_cloud_cover_pct",
+    "weather_shortwave_radiation_w_m2_prior_hour",
+    "weather_wind_speed_10m_kmh",
+    "weather_wind_gusts_10m_kmh",
+    "weather_is_day",
+    "pre_posture_standing",
+    "pre_posture_lying_sternal",
+    "pre_posture_lying_lateral",
+    "pre_posture_transitioning",
+    "pre_posture_unknown",
+    "pre_visibility_full",
+    "pre_visibility_partial",
+    "pre_visibility_not_visible",
+    "pre_transition_stand_to_lie",
+    "pre_transition_lie_to_stand",
+    "pre_transition_none",
+    "pre_transition_unknown",
+    "pre_pawing",
+    "pre_biting_object",
+    "pre_rubbing",
+    "pre_repetitive_movement",
+    "pre_no_secondary_behavior",
+    "pre_posture_dominant"
+  ],
+  "derived_features": [
+    "sin(2*pi*time_of_day_hour/24)",
+    "cos(2*pi*time_of_day_hour/24)",
+    "sin(2*pi*weather_wind_direction_10m_degrees/360)",
+    "cos(2*pi*weather_wind_direction_10m_degrees/360)"
+  ],
+  "prediction_range": "Raw predictions should be clipped to [0, 1]."
+}
